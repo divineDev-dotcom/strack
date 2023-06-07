@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./library/style.css">
+  <title>StockTrack</title>
+</head>
+<body>
+<header>
+  <a href="https://www.salman-sk.in">Visit my main Website</a>
+</header>
+  <nav class="navbar is-fixed-top has-background-black" role="navigation" aria-label="main navigation">
+      <div class="navbar-item">
+        <div class="navbar-brand pt-3">
+        <p class="navitems px-3 py-2"></p><a href="#news">News</a>
+        <p class="navitems px-3 py-2"></p><a href="#stockNav">Stock Search</a>
+        </a>
+        </div>
+      </div>
+  </nav>
+<main>
+  <div class="newscontainer has-background-black">
+    <div class="notification is-primary has-background-black">
+      <div class="columns has-background-black">
+        <div class="column has-background-black ">
+          <div class="tile is-ancestor article-section mb-6" id="news"></div>
+
+          <form class="searchArea pb-4 mb-6">
+            <input class="searchCode px-3 mb-6" placeholder="Stock Symbol"> </input><br>
+            <button class="searchBtn ml-4 px-5 py-2 mb-6" id="stockNav">search</button>
+            <button class="deleteBtn px-3 py-1 mb-6">clear</button>
+            <p class="invalid-msg px-3 py-2 mb-6">  </p>
+          </form>
+
+          <marquee width="100%" direction="left" height="100px"  class="stockToWatch" onMouseOver="this.stop()" onMouseOut="this.start()" ></marquee>
+        </div>
+      </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent bg-light">
+            <article class="tile is-child notification is-primary">
+              <div class="stock-heading title"></div>
+              <div class="current-price subtitle"></div>
+              <div class="high"></div>
+              <div class="low"></div>
+              <div class="open"></div>
+              <div class="previous-close"></div>
+            </article>
+          </div>
+          <div class="tile is-parent is-8">
+            <article class="tile is-child notification is-info chart-holder">
+              <canvas class="myChart" id="myChart"></canvas>
+            </article>
+          </div>
+        </div>
+      </div>
+   </div>
+</main>
+<footer>
+  <p>&copy; 2021-2023 salman-sk. All rights reserved.</p>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./library/accounting.js"></script>
+  <script src="./script.js"></script>
+  </body>
+  </html>

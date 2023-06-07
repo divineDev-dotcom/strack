@@ -1,0 +1,134 @@
+.columns,
+.column,
+.newscontainer,
+.notification
+{
+ background-color: #000000 !important;
+}
+
+.is-child {
+    color: #353535;
+}
+
+.heroimg {
+    background-color: transparent;
+}
+
+.navitems:visited {
+    font-weight: bold;
+    color: #ff00cc;
+}
+
+.navitems:hover {
+    font-weight: bold;
+    color: #ff00cc;
+}
+
+.searchArea {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.searchBtn {
+    background-color: #000000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    color: #ff00cc;
+}
+
+.deleteBtn {
+    background-color: #000000;
+    border: none;
+    color: rgb(82, 82, 82);
+}
+
+.searchBtn:hover {
+    background-color: #ff00cc;
+    font-style: oblique;
+    color: white;
+}
+
+.deleteBtn:hover {
+    font-style: oblique;
+    color: white;
+}
+
+.searchCode {
+    background-color: black;
+    color: #ffffff;
+    border-style: dotted;
+    border: fuchsia;
+}
+
+.imgSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box:hover {
+    background-color: #330099;
+    border-width: thick;
+    color: white;
+}
+
+.stockToWatch {
+    font-family: 'Wallpoet', cursive;
+    color: #ff00cc;
+    font-size: 40px;
+    background-color: #000000;
+}
+
+.history-btn {
+    font-family: 'Wallpoet', cursive;
+    color: #ff00cc;
+    font-size: 40px;
+}
+
+.history-btn:hover {
+    color:aliceblue;
+    border-width: thick;
+}
+
+.stockImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 260px;
+}
+
+.stock-container {
+    display: flex;
+    flex-direction: row;
+    height: 380px;
+    border-radius: 10px;
+}
+
+.current-price,
+.open,
+.high,
+.previous-close,
+.low
+{
+padding: 10px;
+font-weight: bold;
+}
+
+.stock-heading
+{
+padding: 14px;
+font-weight: bold;
+}
+
